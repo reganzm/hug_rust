@@ -116,9 +116,12 @@ fn main() {
     //println!("{a}");
 
     // 在数组中使用切片
-    let array = [2,4,6,8,10,3,6,9];
-    println!("array slice:{:?}",&array[2..]);
-    println!("array slice:{:?}",&array[..5]);
+    let array = [2, 4, 6, 8, 10, 3, 6, 9];
+    println!("array slice:{:?}", &array[2..]);
+    println!("array slice:{:?}", &array[..5]);
+
+    // 复合类型数据转换
+    from_and_into_trait();
 }
 
 // 隐式返回()
@@ -175,4 +178,37 @@ fn do_action(action: &Action) {
             println!("退出....")
         }
     }
+}
+
+// From和Into两个Trait的演示用例
+fn from_and_into_trait() {
+    // 动物
+    #[derive(Debug)]
+    struct Animal {
+        age: u32,
+    }
+    // 龙
+    #[derive(Debug)]
+    struct Loong {
+        age: u32,
+    }
+
+    impl From<Animal> for Loong {
+        fn from(value: Animal) -> Self {
+            Loong { age: value.age }
+        }
+    }
+    impl Into<Animal> for Loong {
+        fn into(self) -> Animal {
+            Animal { age: self.age }
+        }
+    }
+
+    let loong = Loong { age: 10000 };
+    println!("中国龙:{:?}", loong);
+    let loong_is_a_animal: Animal = loong.into();
+    println!("animal:{:?}", loong_is_a_animal);
+    let animal = Animal { age: 9999 };
+    let loong = Loong::from(animal);
+    println!("loong:{:?}", loong);
 }

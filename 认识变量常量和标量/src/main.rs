@@ -62,4 +62,12 @@ fn main() {
     let dog_head: char = '🐶';
 
     println!("smile : {smile} , dog_head : {dog_head}");
+
+    // 类型转换
+
+    let bool_to_u32 = _pass as u32;
+    let char_to_u32 = smile as u32;
+    let f64_to_u32 = weight as u32;
+    let i32_to_f64 = c as f64;
+    println!("bool to u32:{bool_to_u32} \n char to u32 :{char_to_u32} \n f64 to u32 :{f64_to_u32} \n i32 to f64:{i32_to_f64}\n");
 }

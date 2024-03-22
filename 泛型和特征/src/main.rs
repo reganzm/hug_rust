@@ -101,6 +101,7 @@ struct Rectangle<U> {
     length: U,
     width: U,
 }
+
 impl<U: Mul<U, Output = U> + Add<U, Output = U> + Copy + PartialOrd> Rectangle<U> {
     /// 求周长，该方法返回值是泛型
     fn perimeter(&self) -> U {
@@ -112,6 +113,27 @@ impl<U: Mul<U, Output = U> + Add<U, Output = U> + Copy + PartialOrd> Rectangle<U
     }
     /// maxrectangle构造并返回最大的矩形
     fn max_rectangle(&self, other: Self) -> Rectangle<U> {
+        let mut max_length = self.length;
+        if other.length > self.length {
+            max_length = other.length;
+        }
+        let mut max_width = self.width;
+        if other.width > self.width {
+            max_width = other.width;
+        }
+        Self {
+            length: max_length,
+            width: max_width,
+        }
+    }
+}
+
+// 使用where语句将尖括号中的特征限定，拿到尖括号外
+impl<U> Rectangle<U>
+where U: Mul<U, Output = U>+ Add<U, Output = U> + Copy + PartialOrd
+{
+    /// maxrectangle构造并返回最大的矩形
+    fn max_rectangle_1(&self, other: Self) -> Rectangle<U> {
         let mut max_length = self.length;
         if other.length > self.length {
             max_length = other.length;

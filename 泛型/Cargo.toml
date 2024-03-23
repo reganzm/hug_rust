@@ -1,5 +1,5 @@
 [package]
-name = "泛型和特征"
+name = "泛型"
 version = "0.1.0"
 edition = "2021"
 

@@ -45,7 +45,15 @@
 
 [第二回 第一性原理看类型系统](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484186&idx=1&sn=201e3b84de4c813844cc87bddf13a2fd&chksm=cfe11d28f896943e6df94027e6ad50acae6646cddb85150783b15baa76c76c1498ca534c6c29&token=717589962&lang=zh_CN#rd)
 
+[第三回 基本约定](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484197&idx=1&sn=3e1ff57800c00bae425a97a77cdec0d6&chksm=cfe11d17f8969401a39414536420aee96a30e18f011b13fd03f2d9fb1266520c08c595129065&token=2086026546&lang=zh_CN#rd)
 
+[第四回 认识变量常量和标量](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484205&idx=1&sn=ec2e875d1b3930cf4d3dc7ba5c00a79f&chksm=cfe11d1ff8969409c39fd79c4d9e2f82033e6f43a55924cab9b474552647816963ea12f8298d&token=2086026546&lang=zh_CN#rd)
+
+[第五回 Rust中的核心数据类型](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484211&idx=1&sn=76a20ae3dc77827a046914e61edd28d7&chksm=cfe11d01f89694172777713897dd36fd5b3a639289e0c816a51d2ebb8a1b792c1c3753252539&token=2086026546&lang=zh_CN#rd)
+
+[第六回 Rust泛型](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484216&idx=1&sn=31465680eb95faa7b4631eaef1e2e504&chksm=cfe11d0af896941c2cf414fcb141ae8ffe7eb24f312731d62934f6b1fa9351939b53b5aec63b&token=2086026546&lang=zh_CN#rd)
+
+[第七回 Rust的灵魂特征](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484225&idx=1&sn=8981c62dd4e2cb9b3d4ec4d65e70b1c9&chksm=cfe11d73f89694652a7566584e4ba878070eb0695f9afde71280c9221883abf110620549e69a&token=2086026546&lang=zh_CN#rd)
 
 
 ##### 添加公众号

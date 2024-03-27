@@ -42,3 +42,23 @@ fn do_somthing(msg: String) {
 fn do_somthing2(age: u32) {
     println!("age:{age}");
 }
+
+struct Animal {
+    name: String,
+    age: i32,
+}
+
+impl Animal {
+    fn new(name: String, age: i32) -> Self {
+        Self { name, age }
+    }
+    // 下面方法报编译错误，self.name是一个共享引用
+    // 不能move所有权
+    //fn get_name(&self)->String{
+    //    self.name
+    //}
+    // self.age实现了Copy特征，直接拷贝栈上的值返回
+    fn get_age(&self) -> i32 {
+        self.age
+    }
+}

@@ -25,7 +25,6 @@ fn main() {
     println!("ruster name:{}", ruster.get_name());
 
 
-
     // 可变引用
     let mut age = 123;
     let age1 = &mut age;

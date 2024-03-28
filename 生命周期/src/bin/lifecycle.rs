@@ -25,7 +25,59 @@ fn main() {
     }
     let age1 = 123;
     let mut age2 = 73;
-    bigest_age(&age1, &mut age2);
+    let max_age = bigest_age(&age1, &mut age2);
+    println!("max_age:{max_age}");
+
+    // 函数有两个一样的生命周期的参数，返回值的生命周期等于较小作用域的哪个值的生命周期
+    // let age1 = 123;
+    // let max_age;
+    // {
+    //     let mut age2 = 73;
+    //     max_age = bigest_age(&age1, &mut age2);
+    // }
+
+    // println!("max_age:{max_age}");
+
+    
+    // 悬垂引用 编译不通过
+    // fn get_message<'a>()->&'a str{
+    //     let msg = String::from("hello AI");
+    //     msg.as_str()
+    // }
+
+    // 上述代码编译不通过，做如下修改，返回内部所有权
+    fn get_message()->String{
+        String::from("hello AI")
+    }
+
+    #[derive(Debug)]
+    struct Message<'a>{
+        msg:&'a str
+    }
+
+    impl<'a> Message<'a>{
+        fn new(msg:&'a str)->Self{
+            Self{msg}
+        }
+    }
+
+    let say_hi = String::from("hi,how are you");
+    let message = Message{msg:say_hi.as_str()};
+    println!("{:?}", message);
+
+    // 下面方式声明会报错
+    // let message;
+    // {
+    //     let say_hi = String::from("hi,how are you");
+    //     message = Message{msg:say_hi.as_str()};
+    // }
+    // println!("{:?}", message);
+    
+
+}
 
 
+#[derive(Debug)]
+struct ImportantExcerpt<'a> {
+    part: &'a str,
 }

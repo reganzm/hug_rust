@@ -49,7 +49,9 @@ fn main() {
     fn get_message()->String{
         String::from("hello AI")
     }
+    
 
+    // 结构体中的生命周期
     #[derive(Debug)]
     struct Message<'a>{
         msg:&'a str

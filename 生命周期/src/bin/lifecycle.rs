@@ -75,9 +75,3 @@ fn main() {
     
 
 }
-
-
-#[derive(Debug)]
-struct ImportantExcerpt<'a> {
-    part: &'a str,
-}

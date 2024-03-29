@@ -57,6 +57,9 @@
 
 [第七回 Rust的灵魂特征](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484225&idx=1&sn=8981c62dd4e2cb9b3d4ec4d65e70b1c9&chksm=cfe11d73f89694652a7566584e4ba878070eb0695f9afde71280c9221883abf110620549e69a&token=2086026546&lang=zh_CN#rd)
 
+[第八回 所有权和引用](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484234&idx=1&sn=bb345b5beb1ed7d683f604b21d5eedcd&chksm=cfe11d78f896946eefc8d5bcd46e07ad831a17b5acea4ba8abd7b6d09981727ee8b8da9cfd84&token=1876812958&lang=zh_CN#rd)
+
+[第九回 生命周期](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484240&idx=1&sn=9974e08e82d2ffa3e4e9006588a6c897&chksm=cfe11d62f8969474a66050ea3683eff82bb06cd18ef4a46a07862cbed485d6a8b4e9420d435e&token=1876812958&lang=zh_CN#rd)
 
 ##### 添加公众号
 ![微信公众号](./images/wechat_service.jpg)

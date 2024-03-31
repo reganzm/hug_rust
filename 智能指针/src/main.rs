@@ -24,4 +24,12 @@ fn main() {
     unsafe {
         println!("a:{a} b:{}", *b);
     }
+
+
+    // 指针的指针(引用的引用)
+    let a = 123_i32;
+    let b = &a;
+    let c = &b;
+    let d = &c;
+    println!("d address:{:p} , c address:{:p} , b address:{:p} , a address:{:p} , a value:{a}",&d,d,c,b);
 }

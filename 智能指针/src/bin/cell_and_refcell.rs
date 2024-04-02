@@ -1,5 +1,9 @@
 use std::{
-    borrow::Borrow, cell::{Cell, RefCell}, collections::HashMap, ops::{Add, Shl}, rc::Rc
+    borrow::Borrow,
+    cell::{Cell, RefCell},
+    collections::HashMap,
+    ops::{Add, Shl},
+    rc::Rc,
 };
 fn main() {
     // Cell
@@ -18,7 +22,7 @@ fn main() {
     let dog = Animal {
         age: 3,
         weight: RefCell::new(10.5),
-        name:RefCell::new(String::from("小憨包"))
+        name: RefCell::new(String::from("小憨包")),
     };
     println!("dog:{:?}", dog);
     // 修改weight
@@ -28,20 +32,19 @@ fn main() {
     println!("dog weight:{:?}", dog);
 
     // Rc和RefCell组建共享可被修改的数据结构
-    let shared_map: Rc<RefCell<HashMap<&str,i32>>> = Rc::new(RefCell::new(HashMap::new()));
-    println!("strong count :{}",Rc::strong_count(&shared_map));
-    
+    let shared_map: Rc<RefCell<HashMap<&str, i32>>> = Rc::new(RefCell::new(HashMap::new()));
+    println!("strong count :{}", Rc::strong_count(&shared_map));
+
     {
         let shared_map2 = shared_map.clone();
-        println!("strong count :{}",Rc::strong_count(&shared_map));
+        println!("strong count :{}", Rc::strong_count(&shared_map));
         let mut map = shared_map.borrow_mut();
         map.insert("lucky", 1);
         map.insert("regan", 2);
         map.insert("lily", 3);
-        map.insert("pop",4);
+        map.insert("pop", 4);
     }
-    println!("strong count :{}",Rc::strong_count(&shared_map));
-
+    println!("strong count :{}", Rc::strong_count(&shared_map));
 }
 
 #[derive(Debug)]
@@ -54,5 +57,5 @@ struct Student {
 struct Animal {
     age: u8,
     weight: RefCell<f32>,
-    name:RefCell<String>
+    name: RefCell<String>,
 }

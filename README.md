@@ -61,5 +61,9 @@
 
 [第九回 生命周期](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484240&idx=1&sn=9974e08e82d2ffa3e4e9006588a6c897&chksm=cfe11d62f8969474a66050ea3683eff82bb06cd18ef4a46a07862cbed485d6a8b4e9420d435e&token=1876812958&lang=zh_CN#rd)
 
+[第十回 切！这就是指针的本质](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484258&idx=1&sn=918ac5af1be97d0e63f55243c215738a&chksm=cfe11d50f8969446d3e6e43a806ebbc75a9b78f6483e8edf01d480a4525882f1a62103f01922&token=1955546580&lang=zh_CN#rd)
+
+[第十一回 切！这就是Rust中的智能指针，看这一篇足够了](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484265&idx=1&sn=558001ea5de5e2679a9eadcf93330eaa&chksm=cfe11d5bf896944d274f0e83856d6308411f78184a3ee438c885f300b9d59aae2cbe489d533a&token=1955546580&lang=zh_CN#rd)
+
 ##### 添加公众号
 ![微信公众号](./images/wechat_service.jpg)

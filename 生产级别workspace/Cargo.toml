@@ -1,0 +1,7 @@
+[workspace]
+members = [ # 工作空间成员，有多个库组成
+"crates/libs/lib-core", # 核心库 binary
+ "crates/libs/lib-utils", # 工具库 binary
+ "crates/services/printer", # 服务 application
+  ]
+

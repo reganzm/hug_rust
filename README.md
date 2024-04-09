@@ -65,5 +65,18 @@
 
 [第十一回 切！这就是Rust中的智能指针，看这一篇足够了](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484265&idx=1&sn=558001ea5de5e2679a9eadcf93330eaa&chksm=cfe11d5bf896944d274f0e83856d6308411f78184a3ee438c885f300b9d59aae2cbe489d533a&token=1955546580&lang=zh_CN#rd)
 
+[第十二回 用闭包迭代器进行函数式编程，体验飞一般的感觉](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484271&idx=1&sn=65a4a012d3a2f9e11cee0ff87e55298d&chksm=cfe11d5df896944bc5d011dbbe3c11087590743d7d43c615971a6a9bcf08243973ae0f07a2b1&token=923462531&lang=zh_CN#rd)
+
+[第十三回 集合了集合](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484299&idx=1&sn=f5b2e9d8f04a2dc43c9aaebd3406068e&chksm=cfe11db9f89694afa7f2528c989ada878a4832a1eb3831c8b4f29ba29885b50a8f3eb143088b&token=923462531&lang=zh_CN#rd)
+
+[第十四回 控制的艺术](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484306&idx=1&sn=2de5e4bd500d8dead5e9f2fc8074bb8c&chksm=cfe11da0f89694b63289cd984c050fe076dbf667a95b32ed61a15d8aeda76b8e3b4a5a5e2e64&token=923462531&lang=zh_CN#rd)
+
+[第十五回 异常处理的哲学](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484311&idx=1&sn=fb890717b5bdec96b5c3fb496980f688&chksm=cfe11da5f89694b3a0a3c0284d1d148b1d0e4d0862d53075a5bf13cde3d38881a499b9e1b6c6&token=923462531&lang=zh_CN#rd)
+
+[第十六回 生产级别workspace](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484319&idx=1&sn=d711008c22811cb626190ff87fb68fd0&chksm=cfe11dadf89694bb7cd91fea0043c874d35beccc962ea138492c3d2644a130fa4a3f512a0bf5&token=923462531&lang=zh_CN#rd)
+
+[第十七回 自动化测试](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484326&idx=1&sn=23f66a3e106e99bcef7aa7fdfb7e530d&chksm=cfe11d94f89694823694ac5ebf3e8fff106bfe3362ded8406a320efa3d1187900ef69020c79e&token=923462531&lang=zh_CN#rd)
+
+
 ##### 添加公众号
 ![微信公众号](./images/wechat_service.jpg)

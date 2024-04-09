@@ -10,6 +10,11 @@ edition = "2021"
 
 [dev-dependencies]
 pretty_assertions="1"
+criterion = "0.3"
 
 
 
+
+[[bench]]
+name = "benchmark_test1"
+harness = false

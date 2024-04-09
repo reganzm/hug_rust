@@ -1,6 +1,3 @@
-
-
-use std::future;
 /// 判断一个数是否为奇数
 fn odd_number(a: usize) -> bool {
     let mut result = true;
@@ -29,7 +26,7 @@ pub fn devide_by_5(a: usize) -> bool {
 }
 
 /// 通过右移操作除以2
-pub fn devide_2(a:isize)->isize{
+pub fn devide_2(a: isize) -> isize {
     a >> 1
 }
 
@@ -60,11 +57,8 @@ mod tests {
 
     // 使用pretty_assertion中的assert_eq断言
     #[test]
-    fn prettry_assertion(){
+    fn prettry_assertion() {
         use pretty_assertions::assert_eq;
-        assert_eq!(1+1,3);
+        assert_eq!(1 + 1, 3);
     }
-
-
-
 }

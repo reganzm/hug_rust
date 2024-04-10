@@ -1,9 +1,9 @@
 [package]
-name = "宏"
+name = "线程并发编程"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-cargo-watch="8.5.2"
+thread_local = "1"

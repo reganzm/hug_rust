@@ -13,6 +13,6 @@ fn main() {
         // 再次获取锁
         let mut lock = m.lock().unwrap();
         *lock = *lock + 1;
-    }// <--- num离开作用域时，自动调用drop释放锁
+    } // <--- num离开作用域时，自动调用drop释放锁
     println!("m:{:?}", m);
 }

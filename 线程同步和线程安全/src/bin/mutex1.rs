@@ -9,6 +9,6 @@ fn main() {
         let mut lock: std::sync::MutexGuard<i32> = m.lock().unwrap();
         // 通过*解引用获取值，并修改值
         *lock = *lock - 1;
-    }// <--- num离开作用域时，自动调用drop释放锁
+    } // <--- num离开作用域时，自动调用drop释放锁
     println!("m:{:?}", m);
 }

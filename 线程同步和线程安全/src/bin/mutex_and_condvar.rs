@@ -1,7 +1,11 @@
-use std::{sync::{Arc, Condvar, Mutex}, thread, time::Duration};
+use std::{
+    sync::{Arc, Condvar, Mutex},
+    thread,
+    time::Duration,
+};
 
 /// mutex和condvar一起控制线程同步
-fn main(){
+fn main() {
     // 在线程之间共享所有权
     let lock = Arc::new(Mutex::new(false));
     let con = Arc::new(Condvar::new());
@@ -9,7 +13,7 @@ fn main(){
     let lock_1 = lock.clone();
     let con_1 = con.clone();
 
-    let handle = thread::spawn(move||{
+    let handle = thread::spawn(move || {
         let mut locked = lock_1.lock().unwrap();
         let mut counter = 0;
         while counter < 3 {
@@ -22,16 +26,15 @@ fn main(){
             counter += 1;
             println!("子线程counter:{counter}");
         }
-
     });
 
     let mut counter = 0;
     loop {
         thread::sleep(Duration::from_secs(1));
         // 获取锁并置为true
-        *lock.lock().unwrap()=true;
-        counter+=1;
-        if counter > 3{
+        *lock.lock().unwrap() = true;
+        counter += 1;
+        if counter > 3 {
             break;
         }
         println!("主线程counter:{counter}");
@@ -40,6 +43,5 @@ fn main(){
     }
 
     handle.join().unwrap();
-    println!("lock:{:?}",lock);
-
+    println!("lock:{:?}", lock);
 }

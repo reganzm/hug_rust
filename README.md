@@ -77,6 +77,19 @@
 
 [第十七回 自动化测试](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484326&idx=1&sn=23f66a3e106e99bcef7aa7fdfb7e530d&chksm=cfe11d94f89694823694ac5ebf3e8fff106bfe3362ded8406a320efa3d1187900ef69020c79e&token=923462531&lang=zh_CN#rd)
 
+[第十八回 宏](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484331&idx=1&sn=e286f632e3225df7a7af5ae515e0cfb3&chksm=cfe11d99f896948f8376b3dac13f986c2aa80328acbac03c9d6c2fefb5d121de0f2aa3def449&token=1459180003&lang=zh_CN#rd)
+
+[第十九回 并发和并行](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484340&idx=1&sn=5c626fd5d5bcdd453e6868fedf39bdfc&chksm=cfe11d86f8969490bba8c83c848c1b4ecbde307ab6f80290f86c072277366077bfdc67133b35&token=1459180003&lang=zh_CN#rd)
+
+[第二十回 万字长文，细说线程同步与线程安全，彻底弄懂Mutex锁、条件变量、原子变量](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484358&idx=1&sn=58ddd8c44d0c0dba2aea9fab13afe5de&chksm=cfe11df4f89694e272182f175285470f5c373452591f960a94ec9c08c60633d874780608eca9&token=1459180003&lang=zh_CN#rd)
+
+[第二十一回 unsafe的超能力](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484367&idx=1&sn=0cfdbf35f9e874c0bdb8839df32aed7e&chksm=cfe11dfdf89694eb5c8cfa12fc0618cd7f4f25f1ba7eed8e24f91c49157570a28cf6447ee78c&token=1459180003&lang=zh_CN#rd)
+
+[第二十二回 点操作符的魔力](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484372&idx=1&sn=859203e6aa90e0668737ddf44bad7dc0&chksm=cfe11de6f89694f04bc2ed0b9cde2cbe42940bf4a9c26e39eca642e048abee19964f6c449714&token=1459180003&lang=zh_CN#rd)
+
+[第二十三回 同样是高并发，async异步编程到底比多线程厉害在哪里](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484379&idx=1&sn=b6672f4f996d05a070f38e761f2a4d7e&chksm=cfe11de9f89694ff7c7e5f98e09234a74b7cec10695c218d0a25e1efaa538a6082ba9593adb8&token=1459180003&lang=zh_CN#rd)
+
+
 
 ##### 添加公众号
 ![微信公众号](./images/wechat_service.jpg)

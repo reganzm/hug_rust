@@ -89,7 +89,9 @@
 
 [第二十三回 同样是高并发，async异步编程到底比多线程厉害在哪里](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484379&idx=1&sn=b6672f4f996d05a070f38e761f2a4d7e&chksm=cfe11de9f89694ff7c7e5f98e09234a74b7cec10695c218d0a25e1efaa538a6082ba9593adb8&token=1459180003&lang=zh_CN#rd)
 
+[第二十四回 我又找到宝了，快来看，自引用魔鬼和镇魔神器Pin及Unpin](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484388&idx=1&sn=31a054f25663eae47072c76e80f0e876&chksm=cfe11dd6f89694c0a26a49c43f0ada6d59cd5ae9ecb2a25214bfcff72fde4abb366db79c4134&cur_album_id=3357418700156502025&scene=189#wechat_redirect)
 
+[第二十五回 救命，当你还在犹豫，别人已经在运行代码了！基础部分大终结！开发一个好玩的微群聊天项目，完结撒花](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484400&idx=1&sn=4e82b5d218bb719581c80eb908241863&chksm=cfe11dc2f89694d478f05baa4137c6fce37b4677491e0c151f8bf9a649b86c33a6276aea7ed9&cur_album_id=3357418700156502025&scene=189#wechat_redirect)
 
 ##### 添加公众号
 ![微信公众号](./images/wechat_service.jpg)

@@ -1,17 +1,13 @@
 use {
     // 引入之前实现的定时器模块
-    async_programming::TimerFuture,
     futures::{
         future::{BoxFuture, FutureExt},
         task::{waker_ref, ArcWake},
-    },
-    std::{
+    }, mini_async_runtime::TimerFuture, std::{
         future::Future,
-        sync::mpsc::{sync_channel, Receiver, SyncSender},
-        sync::{Arc, Mutex},
-        task::Context,
-        time::Duration,
-    },
+        sync::{mpsc::{sync_channel, Receiver, SyncSender}, Arc, Mutex},
+        task::Context, time::Duration,
+    }
 };
 
 /// 任务执行器，负责从通道中接收任务然后执行
@@ -80,10 +76,15 @@ fn main() {
     }
 
     spawner.spawn(async {
-        println!("howdy!");
-        //TimerFuture::new(Duration::new(2, 0)).await;
         hello().await;
-        println!("done!");
+        TimerFuture::new(Duration::new(2, 0)).await;
+        hello().await;
+    });
+
+    spawner.spawn(async {
+        hello().await;
+       // TimerFuture::new(Duration::new(20, 0)).await;
+        hello().await;
     });
 
     drop(spawner);

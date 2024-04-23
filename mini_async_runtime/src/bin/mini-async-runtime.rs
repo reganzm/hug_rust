@@ -115,6 +115,7 @@ impl Executor {
             // 构建context
             let context = &mut Context::from_waker(&*waker);
             let mut future_slot = task.future.lock().unwrap();
+            // 在poll方法中传入waker
             let status = future_slot.as_mut().poll(context);
             let current_time = SystemTime::now();
             println!(

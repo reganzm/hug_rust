@@ -22,19 +22,35 @@ fn main() {
     async fn hello() {
         thread::sleep(Duration::from_secs(1));
         let current_time = SystemTime::now();
-        println!("{:?} from async hello", current_time);
+        let msg = format!("{:?} from async hello , do something .....", current_time);
     }
-    spawner.spawn(async {
-        hello().await;
-    });
-    spawner.spawn(async {
-        hello().await;
-        TimerFuture::new(Duration::new(1, 0)).await;
-        hello().await;
-    });
-    spawner.spawn(async {
-        hello().await;
-    });
+    spawner.spawn(
+        async {
+            hello().await;
+        },
+        "任务1",
+    );
+    spawner.spawn(
+        async {
+            hello().await;
+            hello().await;
+        },
+        "任务2",
+    );
+    spawner.spawn(
+        async {
+            hello().await;
+            TimerFuture::new(Duration::new(1, 0)).await;
+            hello().await;
+        },
+        "任务3",
+    );
+    spawner.spawn(
+        async {
+            hello().await;
+        },
+        "任务4",
+    );
     // 关闭task_sender端，结束executor中的while let循环
     drop(spawner);
 
@@ -48,6 +64,7 @@ struct Task {
     future: Mutex<BoxFuture<'static, ()>>,
     // 可以将该任务自身放回到任务通道中，等待执行器的poll
     task_sender: Sender<Arc<Task>>,
+    task_name: String,
 }
 
 /// 为Task实现ArcWake trait
@@ -72,7 +89,7 @@ struct Spawner {
 
 // 为Spawner实现spawn方法
 impl Spawner {
-    fn spawn(&self, future: impl Future<Output = ()> + 'static + Send) {
+    fn spawn(&self, future: impl Future<Output = ()> + 'static + Send, task_name: &str) {
         // boxed方法需要引入futures::future::FutureExt
         // Pin住future
         let future: std::pin::Pin<Box<dyn Future<Output = ()> + Send>> = future.boxed();
@@ -80,6 +97,7 @@ impl Spawner {
         let task = Arc::new(Task {
             future: Mutex::new(future),
             task_sender: self.task_sender.clone(),
+            task_name: String::from(task_name),
         });
         // 发送task到channel
         self.task_sender.send(task).expect("发送消息失败");
@@ -99,7 +117,10 @@ impl Executor {
             let mut future_slot = task.future.lock().unwrap();
             let status = future_slot.as_mut().poll(context);
             let current_time = SystemTime::now();
-            println!("{:?} status:{:?}", current_time, status)
+            println!(
+                "{:?} 任务状态:{:?} 任务名称:{:?}",
+                current_time, status, &task.task_name
+            )
         }
     }
 }
@@ -127,13 +148,13 @@ impl Future for TimerFuture {
         let mut shared_state = self.shared_state.lock().unwrap();
         if shared_state.completed {
             let current_time = SystemTime::now();
-            println!("{:?} task ready", current_time);
+            //println!("{:?} task ready", current_time);
             Poll::Ready(())
         } else {
             // poll方法将waker传入Future中
             shared_state.waker = Some(cx.waker().clone());
             let current_time = SystemTime::now();
-            println!("{:?} task pending", current_time);
+            //println!("{:?} task pending", current_time);
             Poll::Pending
         }
     }
@@ -151,13 +172,13 @@ impl TimerFuture {
         let thread_shared_state = shared_state.clone();
         thread::spawn(move || {
             let current_time = SystemTime::now();
-            println!("{:?} timer future sleep ...", current_time);
+            println!("{:?} 任务睡眠中 ...", current_time);
             thread::sleep(duration);
             let mut shared_state = thread_shared_state.lock().unwrap();
             shared_state.completed = true;
             if let Some(waker) = shared_state.waker.take() {
                 let current_time = SystemTime::now();
-                println!("{:?} timer future waker ...", current_time);
+                println!("{:?} 任务结束通知executor ...", current_time);
                 waker.wake_by_ref()
             }
         });

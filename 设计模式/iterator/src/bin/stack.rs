@@ -68,7 +68,7 @@ impl<T> Stack<T> {
     }
 }
 
-// 实现Iterator trait ,提供三种不同的迭代功能
+// 将Stack变成三种不同的迭代器
 
 // 消费集合数据变成一个迭代器
 struct IntoIter<T>(Stack<T>);
@@ -128,6 +128,6 @@ fn main() {
     // 将消费stack生成迭代器
     let sum = s.into_iter().sum::<i32>();
     println!("sum:{sum}"); // 输出1327
-                           // stack已被消费，所有权已经转移，下面代码会报编译错误
-                           //println!("stack:{:?}",s);
+    // stack已被消费，所有权已经转移，下面代码会报编译错误
+    // println!("stack:{:?}",s);
 }

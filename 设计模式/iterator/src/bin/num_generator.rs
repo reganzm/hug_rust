@@ -81,6 +81,17 @@ fn main() {
         .collect::<Vec<usize>>()
         .into_iter()
         .for_each(|n| println!("{n}"));
+
+    // 链式调用
+    (0..10)
+        .map(|e| {
+            println!("map:{e}");
+            e
+        })
+        .filter(|e| {
+            println!("filter:{e}");
+            *e >= 0
+        }).for_each(|e|println!("for_each:{e}"));
 }
 
 // 统计迭代器元素个数

@@ -1,5 +1,5 @@
 [package]
-name = "factory_and_absfactory"
+name = "factory_method_and_absfactory"
 version = "0.1.0"
 edition = "2021"
 

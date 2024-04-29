@@ -93,5 +93,15 @@
 
 [第二十五回 救命，当你还在犹豫，别人已经在运行代码了！基础部分大终结！开发一个好玩的微群聊天项目，完结撒花](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484400&idx=1&sn=4e82b5d218bb719581c80eb908241863&chksm=cfe11dc2f89694d478f05baa4137c6fce37b4677491e0c151f8bf9a649b86c33a6276aea7ed9&cur_album_id=3357418700156502025&scene=189#wechat_redirect)
 
+### 进阶篇
+
+[进阶篇开篇词，浅浅期待一下23种设计模式的Rust版本，咱们不见不散](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484423&idx=1&sn=c37dc1a61f9b20bf0ae254a1ea75df4e&chksm=cfe11a35f89693231ddc9d6c8144ec4d20982428842b1cc09b7ae3484dee7be4b01d2e7887ad&token=1509466189&lang=zh_CN#rd)
+
+[逼自己看完，你的设计模式应用能力就会提高：迭代器模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484445&idx=1&sn=cb3fff3dd0d5d89468ca6965d7331877&chksm=cfe11a2ff896933999228d8931d7fb370af36357769a889411fb46384ddb761d4b8800d7f49f&token=1509466189&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了，Rust设计模式之单例模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484454&idx=1&sn=24dc1a58ddd8c4a7631f4c83e9d3ebac&chksm=cfe11a14f89693029e110e2e7d3d01f7b40178fcf090b2b18d4c454ca3fd8924b71e033cc836&token=1509466189&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了，设计模式之工厂模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484462&idx=1&sn=af290dbe1ef90eba68d1aeb7467b39a0&chksm=cfe11a1cf896930a6d30ebe667cce0ea64109321aa786787df8dfda60594411ed5ed69c1c4bb&token=1509466189&lang=zh_CN#rd)
+
 ##### 添加公众号
 ![微信公众号](./images/wechat_service.jpg)

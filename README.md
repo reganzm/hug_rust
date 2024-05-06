@@ -103,5 +103,15 @@
 
 [别找了，Rust设计模式都在这里了，设计模式之工厂模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484462&idx=1&sn=af290dbe1ef90eba68d1aeb7467b39a0&chksm=cfe11a1cf896930a6d30ebe667cce0ea64109321aa786787df8dfda60594411ed5ed69c1c4bb&token=1509466189&lang=zh_CN#rd)
 
+[别找了，Rust设计模式都在这里了，设计模式之观察者模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484469&idx=1&sn=cdf2f08250f68ae9e49a6632f3eb4d70&chksm=cfe11a07f8969311299b30896ba8d29a695d1e23c26bb98c23d8f49dfc96d820888cd3eb617f&token=1404716041&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——适配器模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484476&idx=1&sn=05e2d8f50423b84a34eed48f9547c0cc&chksm=cfe11a0ef8969318ec63602f62c704fe4ae6a8c90532499df4826f8b6022afe00d1bda661bd3&token=1404716041&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——策略模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484483&idx=1&sn=f0c2d8de8dd22d84bf8fc881cd3d7961&chksm=cfe11a71f8969367c43aaacb1fa847308b5429a25ab37350bf4010095a6c525f6b74724f80c8&token=1404716041&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——外观模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484489&idx=1&sn=148d2cb28c0ed013dd6af332e9cf5da2&chksm=cfe11a7bf896936d0c053b50105de0251932aaaa775df74619a56fdfd46a8535582ef87742fd&token=1404716041&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——享元模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484495&idx=1&sn=8529e41ae5be39d82792f0a27b57825d&chksm=cfe11a7df896936bb65dabcb1d27d8d1f12295ced6384ded7b486185031a665400347b2fa4bc&token=1404716041&lang=zh_CN#rd)
+
 ##### 添加公众号
 ![微信公众号](./images/wechat_service.jpg)

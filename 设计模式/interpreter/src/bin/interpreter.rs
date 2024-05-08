@@ -3,7 +3,7 @@ trait Expression {
     fn interpret(&self) -> i32;
 }
 
-// 数字表达式
+// 数字表达式 属于TerminalExpression
 struct NumberExpression {
     value: i32,
 }
@@ -17,7 +17,7 @@ impl Expression for NumberExpression {
         self.value
     }
 }
-// 加法表达式
+// 加法表达式 属于NonterminalExpression
 struct AddExpression {
     left: Box<dyn Expression>,
     right: Box<dyn Expression>,

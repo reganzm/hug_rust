@@ -1,4 +1,5 @@
 //! 解释器模式
+
 trait Expression {
     fn interpret(&self) -> i32;
 }
@@ -36,7 +37,9 @@ impl Expression for AddExpression {
 fn main() {
     let first = NumberExpression::new(10);
     let second = NumberExpression::new(99);
-    let add = AddExpression::new(Box::new(first), Box::new(second));
+    let thrid = NumberExpression::new(199);
+    let tmp = AddExpression::new(Box::new(first), Box::new(second));
+    let add = AddExpression::new(Box::new(tmp), Box::new(thrid));
     let result = add.interpret();
     println!("result:{result}");
 }

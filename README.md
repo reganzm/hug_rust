@@ -113,5 +113,18 @@
 
 [别找了，Rust设计模式都在这里了——享元模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484495&idx=1&sn=8529e41ae5be39d82792f0a27b57825d&chksm=cfe11a7df896936bb65dabcb1d27d8d1f12295ced6384ded7b486185031a665400347b2fa4bc&token=1404716041&lang=zh_CN#rd)
 
+
+[别找了，Rust设计模式都在这里了——代理模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484502&idx=1&sn=0bcc7033a2786aa8d6ec7bc950302df3&chksm=cfe11a64f8969372cbbe9c0f9a87ecfc7ac1ef2a3a6d87f9311cb283c9409c1c651484da48ad&token=1404716041&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——命令模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484508&idx=1&sn=2440dfb9aa5dbec0a2f68f5a3c212534&chksm=cfe11a6ef896937842da6b5564d0ca5e80c61a4ab4b036a04a4b1660d185618121fa03e4487f&token=1404716041&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——原型模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484514&idx=1&sn=5d4cfae291f3bc24fd528918b2c08c51&chksm=cfe11a50f8969346514d6cd81577f6d7659dbea5a27582fe5806795031de77c0df9e501785f7&token=1404716041&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——组合模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484521&idx=1&sn=494b8d5c6e5b84c1622e634603c5e7c7&chksm=cfe11a5bf896934d3ed43142e99306fe0519278f8be44eb10c2eec39d359c18f608f1c7c83a1&token=1404716041&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——责任链模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484528&idx=1&sn=5b8f9120b4f4a36b0f794b9cdb9b5ab5&chksm=cfe11a42f8969354fec1705c8e87d5abd22023928026e29688f088feb81daf373b849c42c9ed&token=1404716041&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——桥接模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484556&idx=1&sn=1eb435a3dbbbae547925692f3b65dcb1&chksm=cfe11abef89693a877349c7624250b01d3c694a203af62463a8056876188d6b9cb0adf52fb4d&token=1404716041&lang=zh_CN#rd)
+
 ##### 添加公众号
 ![微信公众号](./images/wechat_service.jpg)

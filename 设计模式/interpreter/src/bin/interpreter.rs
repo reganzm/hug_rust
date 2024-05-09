@@ -33,13 +33,68 @@ impl Expression for AddExpression {
         self.left.interpret() + self.right.interpret()
     }
 }
+// 减法表达式
+struct SubExpression {
+    left: Box<dyn Expression>,
+    right: Box<dyn Expression>,
+}
+impl SubExpression {
+    fn new(left: Box<dyn Expression>, right: Box<dyn Expression>) -> Self {
+        Self { left, right }
+    }
+}
+impl Expression for SubExpression {
+    fn interpret(&self) -> i32 {
+        self.left.interpret() - self.right.interpret()
+    }
+}
+// 乘法表达式
+struct MulExpression {
+    left: Box<dyn Expression>,
+    right: Box<dyn Expression>,
+}
+impl MulExpression {
+    fn new(left: Box<dyn Expression>, right: Box<dyn Expression>) -> Self {
+        Self { left, right }
+    }
+}
+impl Expression for MulExpression {
+    fn interpret(&self) -> i32 {
+        self.left.interpret() * self.right.interpret()
+    }
+}
+// 除法表达式
+struct DiviExpression {
+    left: Box<dyn Expression>,
+    right: Box<dyn Expression>,
+}
+impl DiviExpression {
+    fn new(left: Box<dyn Expression>, right: Box<dyn Expression>) -> Self {
+        Self { left, right }
+    }
+}
+impl Expression for DiviExpression {
+    fn interpret(&self) -> i32 {
+        let tmp = self.right.interpret();
+        // 除数不能为0
+        assert_ne!(0, tmp);
+        self.left.interpret() / self.right.interpret()
+    }
+}
 
 fn main() {
-    let first = NumberExpression::new(10);
-    let second = NumberExpression::new(99);
-    let thrid = NumberExpression::new(199);
-    let tmp = AddExpression::new(Box::new(first), Box::new(second));
-    let add = AddExpression::new(Box::new(tmp), Box::new(thrid));
-    let result = add.interpret();
-    println!("result:{result}");
+    // 计算4 * 5 + 6 / 3 - 1
+    let a = NumberExpression::new(4);
+    let b = NumberExpression::new(5);
+    let c = NumberExpression::new(6);
+    let d = NumberExpression::new(3);
+    let e = NumberExpression::new(1);
+
+    let part1 = MulExpression::new(Box::new(a), Box::new(b));
+    let part2 = DiviExpression::new(Box::new(c), Box::new(d));
+    let part3 = AddExpression::new(Box::new(part1), Box::new(part2));
+    let part4 = SubExpression::new(Box::new(part3), Box::new(e));
+
+    let result = part4.interpret();
+    println!(" 4 * 5 + 6 / 3 - 1 = {result} ");
 }

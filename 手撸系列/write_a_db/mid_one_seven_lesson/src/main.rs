@@ -113,7 +113,6 @@ fn parse_double(input: &str) -> IResult<&str, f64> {
     )(input)
 }
 
-
 fn int_value(input: &str) -> IResult<&str, FieldValue> {
     terminated(map(parse_int, |i| FieldValue::Int(i)), tag_no_case("i"))(input)
 }
@@ -205,7 +204,6 @@ fn lines(input: &str) -> IResult<&str, Vec<Line>> {
     Ok(("", res))
 }
 
-
 #[test]
 fn test_parse_double() {
     assert_eq!(parse_double("3"), Ok(("", 3 as f64)));
@@ -263,10 +261,6 @@ fn test_field_set() {
         ))
     )
 }
-
-
-
-
 
 #[test]
 fn test_tag_set() {

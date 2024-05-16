@@ -126,5 +126,21 @@
 
 [别找了，Rust设计模式都在这里了——桥接模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484556&idx=1&sn=1eb435a3dbbbae547925692f3b65dcb1&chksm=cfe11abef89693a877349c7624250b01d3c694a203af62463a8056876188d6b9cb0adf52fb4d&token=1404716041&lang=zh_CN#rd)
 
+
+[别找了，Rust设计模式都在这里了——装饰器模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484587&idx=1&sn=87ed86106096282487f0b6132c0e349a&chksm=cfe11a99f896938fe50986dcb5bd62c10d3113d6bc176c9ef2243ccf0fe4c9bf6eb221321bab&token=878609984&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——构建者模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484594&idx=1&sn=36ccb3cf71e0c7fa8a6a89d737101825&chksm=cfe11a80f8969396c39edacb9293774f744f592985e2f800b7abfdd46b099605bf499185fd14&token=878609984&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——过滤器模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484596&idx=1&sn=f9e2c8c81704a3fcedede8bf002c7d74&chksm=cfe11a86f89693908b6ba63ad4a25478cad10a9509edbfb92273995c17de99d8a06b1034d842&token=878609984&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——备忘录模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484597&idx=1&sn=97c06e05b929deb273ebe0422bcee63e&chksm=cfe11a87f89693918dc23bf0153836868780cea7bc7647d7b256a6b2f837c6423486a75c1e3e&token=878609984&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——解释器模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484598&idx=1&sn=b588d08fa7b22dc8e26a7aa0ace5019c&chksm=cfe11a84f8969392f1d6de355c141b421b834584232c5186b3da2047f03df791b9723a8e8441&token=878609984&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——模板方法模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484599&idx=1&sn=2fce0a60be2450051517666958ab1a0e&chksm=cfe11a85f896939360c790fa161ffb3bca59117c61335e4ce2dbda064dadcbeea930728d3133&token=878609984&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——访问者模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484600&idx=1&sn=b81855bb242b46f90213c53643d032d3&chksm=cfe11a8af896939c53f53ce57e8033614033b5fba82a18159356eafef4d19d523767e44b2d93&token=878609984&lang=zh_CN#rd)
+
+
 ##### 添加公众号
 ![微信公众号](./images/wechat_service.jpg)

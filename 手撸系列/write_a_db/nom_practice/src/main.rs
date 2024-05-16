@@ -19,6 +19,7 @@ use nom::sequence::separated_pair;
 use nom::sequence::terminated;
 use nom::sequence::tuple;
 use nom::IResult;
+use std::time::Duration;
 
 pub mod data;
 
@@ -41,12 +42,19 @@ pub struct Line<'a> {
 
 fn measurement(input: &str) -> IResult<&str, &str> {
     recognize(many1(alt((
-        tag("\\ "), // "\ " branch1
-        tag("\\,"), // "\," branch2
-        tag("\\"),  // "\" . branch3
-        // recognize(none_of(" ,\\")),
+        tag("\\ "),
+        tag("\\,"),
         take_while1(|c| c != ' ' && c != ',' && c != '\\'),
     ))))(input)
+}
+
+#[test]
+fn test_mesurement() {
+    assert_eq!(measurement("天气"), Ok(("", "天气")));
+    assert_eq!(measurement("天气\\啊"), Ok(("\\啊", "天气")));
+    assert_eq!(measurement("天气,预报"), Ok((",预报", "天气")));
+    assert_eq!(measurement("天气\\,预报"), Ok(("", "天气\\,预报")));
+    assert_eq!(measurement("天气\\ 预报"), Ok(("", "天气\\ 预报")));
 }
 
 fn tag_k_v(input: &str) -> IResult<&str, &str> {
@@ -59,12 +67,38 @@ fn tag_k_v(input: &str) -> IResult<&str, &str> {
     ))))(input)
 }
 
+#[test]
+fn test_tag_k_v() {
+    assert_eq!(tag_k_v("地点"), Ok(("", "地点")));
+    assert_eq!(tag_k_v("地点 "), Ok((" ", "地点")));
+    assert_eq!(tag_k_v(r#"地点\ \,\=\"#), Ok(("", r#"地点\ \,\=\"#)));
+    println!("{:?}", r#"地点\ \,\=\"#);
+    assert_eq!(tag_k_v(r#"地点\ \,\=,"#), Ok((",", r#"地点\ \,\="#)));
+}
+
 // ,tag_k=tag_v,tag_k=tag_v.......
 fn tag_set(input: &str) -> IResult<&str, Vec<(&str, &str)>> {
     many1(preceded(
         tag(","),
         separated_pair(tag_k_v, tag("="), tag_k_v),
     ))(input)
+}
+
+#[test]
+fn test_tag_set() {
+    assert_eq!(
+        tag_set(",a=a,b=b,c=c,"),
+        Ok((",", vec![("a", "a"), ("b", "b"), ("c", "c")]))
+    );
+    assert!(tag_set(",a==a,b=b,c=c,").is_err());
+    assert_eq!(
+        tag_set(",a=a ,b=b,c=c,"),
+        Ok((" ,b=b,c=c,", vec![("a", "a")]))
+    );
+    assert_eq!(
+        tag_set(",a=a\\ ,b=b,c=c,"),
+        Ok((",", vec![("a", "a\\ "), ("b", "b"), ("c", "c")]))
+    );
 }
 
 fn bool_value(input: &str) -> IResult<&str, FieldValue> {
@@ -76,8 +110,10 @@ fn bool_value(input: &str) -> IResult<&str, FieldValue> {
     ))(input)
 }
 
-fn integer<'a>(input: &'a str) -> IResult<&'a str, &'a str> {
-    recognize(pair(opt(alt((tag("+"), tag("-")))), digit1))(input)
+#[test]
+fn test_bool_value() {
+    assert_eq!(bool_value("T"), Ok(("", FieldValue::Bool(true))));
+    assert_eq!(bool_value("TRue"), Ok(("", FieldValue::Bool(true))));
 }
 
 fn parse_int(input: &str) -> IResult<&str, i64> {
@@ -85,6 +121,18 @@ fn parse_int(input: &str) -> IResult<&str, i64> {
         recognize(pair(opt(alt((tag("+"), tag("-")))), digit1)),
         |s: &str| s.parse::<i64>(),
     )(input)
+}
+
+fn parse_integer(input: &str) -> IResult<&str, i64> {
+    map_res(
+        recognize(pair(opt(alt((tag("+"), tag("-")))), digit1)),
+        |s: &str| s.parse::<i64>(),
+    )(input)
+}
+
+#[test]
+fn test_parse_int() {
+    assert_eq!(parse_integer("+12345"), Ok(("", 12345)));
 }
 
 fn parse_double(input: &str) -> IResult<&str, f64> {
@@ -126,6 +174,11 @@ fn uint_value(input: &str) -> IResult<&str, FieldValue> {
         |u| FieldValue::Uint(u),
     )(input)
 }
+#[test]
+fn test_uint_value() {
+    assert_eq!(uint_value("4357867U"), Ok(("", FieldValue::Uint(4357867))));
+}
+
 fn float_value(input: &str) -> IResult<&str, FieldValue> {
     map(parse_double, |f| FieldValue::Float(f))(input)
 }
@@ -204,6 +257,21 @@ fn lines(input: &str) -> IResult<&str, Vec<Line>> {
     Ok(("", res))
 }
 
+fn main() {
+    use std::thread;
+    use std::time::SystemTime;
+    fn test_lines() {
+        let t1 = SystemTime::now();
+        println!("now:{:?}", t1);
+        println!("{:?}", lines(data::DATA));
+        assert!(lines(data::DATA).is_ok());
+        let t2 = SystemTime::now();
+        println!("运行时间:{:?}", t2.duration_since(t1));
+    }
+    test_lines();
+    thread::sleep(Duration::from_secs(1000));
+}
+
 #[test]
 fn test_parse_double() {
     assert_eq!(parse_double("3"), Ok(("", 3 as f64)));
@@ -215,13 +283,8 @@ fn test_parse_double() {
 }
 
 #[test]
-fn test_parse_int() {
-    assert_eq!(parse_int("+123"), Ok(("", 123)));
-}
-
-#[test]
 fn test_lines() {
-    // println!("{:?}", lines(data::DATA));
+    println!("{:?}", lines(data::DATA));
     assert!(lines(data::DATA).is_ok())
 }
 
@@ -263,64 +326,10 @@ fn test_field_set() {
 }
 
 #[test]
-fn test_tag_set() {
-    assert_eq!(
-        tag_set(",a=a,b=b,c=c,"),
-        Ok((",", vec![("a", "a"), ("b", "b"), ("c", "c")]))
-    );
-    assert!(tag_set(",a==a,b=b,c=c,").is_err());
-    assert_eq!(
-        tag_set(",a=a ,b=b,c=c,"),
-        Ok((" ,b=b,c=c,", vec![("a", "a")]))
-    );
-    assert_eq!(
-        tag_set(",a=a\\ ,b=b,c=c,"),
-        Ok((",", vec![("a", "a\\ "), ("b", "b"), ("c", "c")]))
-    );
-}
-
-#[test]
-fn test_tag_k_v() {
-    assert_eq!(tag_k_v("地点"), Ok(("", "地点")));
-    assert_eq!(tag_k_v("地点 "), Ok((" ", "地点")));
-    assert_eq!(tag_k_v(r#"地点\ \,\="#), Ok(("", r#"地点\ \,\="#)));
-    assert_eq!(tag_k_v(r#"地点\ \,\=,"#), Ok((",", r#"地点\ \,\="#)));
-}
-
-#[test]
-fn test_bool_value() {
-    assert_eq!(bool_value("T"), Ok(("", FieldValue::Bool(true))));
-    assert_eq!(bool_value("TRue"), Ok(("", FieldValue::Bool(true))));
-}
-#[test]
-fn test_int_value() {
-    assert_eq!(int_value("+12345i"), Ok(("", FieldValue::Int(12345))));
-    assert_eq!(int_value("-12345i"), Ok(("", FieldValue::Int(-12345))));
-    assert_eq!(int_value("12345i"), Ok(("", FieldValue::Int(12345))));
-    assert!(int_value("123456u").is_err());
-}
-
-#[test]
-fn test_uint_value() {
-    assert_eq!(uint_value("4357867U"), Ok(("", FieldValue::Uint(4357867))));
-}
-
-#[test]
 fn test_str_value() {
     assert_eq!(str_value("\"abc\""), Ok(("", FieldValue::String("abc"))));
     assert_eq!(str_value("\"\""), Ok(("", FieldValue::String(""))));
 }
 
 #[test]
-fn test_measurement() {
-    assert_eq!(measurement("气温,hello"), Ok((",hello", "气温")));
-    assert_eq!(
-        measurement("气温\\,\\ hello "),
-        Ok((" ", "气温\\,\\ hello"))
-    );
-}
-
-#[test]
 fn test_many0_hello() {}
-
-fn main() {}

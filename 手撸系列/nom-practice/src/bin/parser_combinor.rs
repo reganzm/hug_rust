@@ -41,8 +41,8 @@ fn parser_combinor<F, F1, F2>(
 ) -> Vec<&str>
 where
     F: FnMut(&str) -> Result<(&str, &str), &str>,
-    F1:FnMut(&str) -> Result<(&str, &str), &str>,
-    F2:FnMut(&str) -> Result<(&str, &str), &str>,
+    F1: FnMut(&str) -> Result<(&str, &str), &str>,
+    F2: FnMut(&str) -> Result<(&str, &str), &str>,
 {
     let mut result = vec![];
     if let Ok((input, res)) = hello_parser(msg) {

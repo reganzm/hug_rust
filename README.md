@@ -142,5 +142,9 @@
 [别找了，Rust设计模式都在这里了——访问者模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484600&idx=1&sn=b81855bb242b46f90213c53643d032d3&chksm=cfe11a8af896939c53f53ce57e8033614033b5fba82a18159356eafef4d19d523767e44b2d93&token=878609984&lang=zh_CN#rd)
 
 
+[别找了，Rust设计模式都在这里了——状态模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484601&idx=1&sn=6c1271291ed9e750a6bd0effbfa531b3&chksm=cfe11a8bf896939d17d2e844d139b0612bc202f73cbd139e5e0966b191d0b53be1d8f29e48c5&token=657392745&lang=zh_CN#rd)
+
+[别找了，Rust设计模式都在这里了——中介者模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484616&idx=1&sn=058c40f77337b66b729d3c2e306ac9a2&chksm=cfe11afaf89693eca819b8ed02d4eb1abbb117401f7e22e9dbddb7b7c97b46b82ed196391fd2&token=657392745&lang=zh_CN#rd)
+
 ##### 添加公众号
 ![微信公众号](./images/wechat_service.jpg)

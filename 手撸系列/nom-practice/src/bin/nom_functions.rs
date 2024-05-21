@@ -1,7 +1,7 @@
 use nom::{
     branch::alt,
     bytes::complete::tag,
-    combinator::{consumed, peek, recognize,map},
+    combinator::{consumed, map, peek, recognize},
     multi::{many0, many1},
     sequence::{delimited, pair, preceded, separated_pair, terminated, tuple},
     IResult,
@@ -22,7 +22,7 @@ fn main() {
     println!("consumed:{:?}", comsumed_parser(msg));
     println!("many0:{:?}", many0_parser(msg1));
     println!("many1:{:?}", many1_parser(msg1));
-    println!("map:{:?}",map_transformation(msg1));
+    println!("map:{:?}", map_transformation(msg1));
 }
 // 解析器——消耗
 fn hello_parser(input: &str) -> IResult<&str, &str> {
@@ -90,6 +90,6 @@ fn many1_parser(input: &str) -> IResult<&str, Vec<&str>> {
 }
 
 // map转换函数
-fn map_transformation(input:&str)->IResult<&str,usize>{
-    map(many0(tag("hello")),|s:Vec<_>|s.len())(input)
+fn map_transformation(input: &str) -> IResult<&str, usize> {
+    map(many0(tag("hello")), |s: Vec<_>| s.len())(input)
 }

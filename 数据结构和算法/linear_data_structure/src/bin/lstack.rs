@@ -13,59 +13,52 @@ struct Node<T> {
     // 下一个节点
     next: NodeRef<T>,
 }
-impl<T> Node<T>{
-    fn new(data:T)->Self{
-        Self{
-            elem:data,
-            next:None
+impl<T> Node<T> {
+    fn new(data: T) -> Self {
+        Self {
+            elem: data,
+            next: None,
         }
     }
 }
-struct LStack<T>{
-    size:usize,
-    top:NodeRef<T>
+struct LStack<T> {
+    size: usize,
+    top: NodeRef<T>,
 }
 
-impl<T> LStack<T>{
-    fn new()->Self{
-        Self{
-            size:0,
-            top:None
-        }
+impl<T> LStack<T> {
+    fn new() -> Self {
+        Self { size: 0, top: None }
     }
 
-    fn is_empty(&self)->bool{
-        0==self.size
+    fn is_empty(&self) -> bool {
+        0 == self.size
     }
 
-    fn len(&self)->usize{
+    fn len(&self) -> usize {
         self.size
     }
 
-    fn clear(&mut self){
+    fn clear(&mut self) {
         self.size = 0;
         self.top = None;
     }
 
-    fn push(&mut self,val:T){
+    fn push(&mut self, val: T) {
         let mut node = Node::new(val);
         node.next = self.top.take();
         self.top = Some(Box::new(node));
-        self.size+=1;
+        self.size += 1;
     }
 
-
-    fn pop(&mut self)->Option<T>{
-        self.top.take().map(|node|{
+    fn pop(&mut self) -> Option<T> {
+        self.top.take().map(|node| {
             let node = *node;
             self.top = node.next;
-            self.size-=1;
+            self.size -= 1;
             node.elem
         })
     }
 }
 
-
-fn main(){
-
-}
+fn main() {}

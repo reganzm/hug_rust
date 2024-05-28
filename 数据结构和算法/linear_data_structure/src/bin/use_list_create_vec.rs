@@ -1,7 +1,6 @@
 //!使用链表创建vec
 
 use std::fmt::Debug;
-mod linklist;
 
 type NodeRef<T> = Option<Box<Node<T>>>;
 #[derive(Debug)]

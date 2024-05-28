@@ -146,5 +146,20 @@
 
 [别找了，Rust设计模式都在这里了——中介者模式](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484616&idx=1&sn=058c40f77337b66b729d3c2e306ac9a2&chksm=cfe11afaf89693eca819b8ed02d4eb1abbb117401f7e22e9dbddb7b7c97b46b82ed196391fd2&token=657392745&lang=zh_CN#rd)
 
+
+
+### 提升篇
+
+### 手撸系列
+[逼自己看完，你的Rust撸码水平就会变牛，手搓一个线程池](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484417&idx=1&sn=f743a6c0c1805def380dbb5f39f0a9d1&chksm=cfe11a33f8969325bc59f76480f23a88c66c080783bf0a6264c9315d10d053e011f4d9f9e4a6&token=2060893093&lang=zh_CN#rd)
+
+[逼自己看完，你的Rust撸码水平就会提高，手搓一个mini-async异步运行时——Rust高并发的基础](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484436&idx=1&sn=9551ecdc7f350e493638d363affd9c7a&chksm=cfe11a26f8969330c1c64849a06594708556cf9d2ca9daa5e05fee79b29991b6fb52fe5f734a&token=2060893093&lang=zh_CN#rd)
+
+[拥抱未来语言Rust|第二十五回 救命，当你还在犹豫，别人已经在运行代码了！基础部分大终结！开发一个好玩的微群聊天项目，完结撒花](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484400&idx=1&sn=4e82b5d218bb719581c80eb908241863&chksm=cfe11dc2f89694d478f05baa4137c6fce37b4677491e0c151f8bf9a649b86c33a6276aea7ed9&token=2060893093&lang=zh_CN#rd)
+
+[绝了，干货不重样！新手挑战一小时学一种Rust框架之解析框架nom——实现时序数据库协议解析（上）](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484615&idx=1&sn=5126cca16798c6601598b7d736b842c0&chksm=cfe11af5f89693e357450b03f0133ac807cf44e4160b04a68139e644bdc54553c668375115cb&token=2060893093&lang=zh_CN#rd)
+
+[性能炸裂！10万行数据耗时500毫秒，使用rust的nom框架实现时序数据库协议解析(下)](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484625&idx=1&sn=ad12d066f20307cdc16a965114eff66c&chksm=cfe11ae3f89693f59418e0706d59000da1fb4dfe401b4befab6908f05e0a3cdfe7ab6e32f8b3&token=2060893093&lang=zh_CN#rd)
+
 ##### 添加公众号
 ![微信公众号](./images/wechat_service.jpg)

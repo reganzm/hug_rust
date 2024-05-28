@@ -101,7 +101,7 @@ impl<T: Debug + Copy> LVec<T> {
         }
     }
 
-    // 重尾部弹出数据
+    // 从尾部弹出数据
     fn pop(&mut self) -> Option<T> {
         if self.is_empty() {
             None

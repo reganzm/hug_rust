@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "crates/libs/parser",
+    "crates/libs/execution",
+    "crates/services/repl"]
+
+

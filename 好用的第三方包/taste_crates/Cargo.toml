@@ -1,0 +1,18 @@
+[package]
+name = "taste_crates"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# 一个用于打印诊断信息的库
+miette = {features = ["fancy"]}
+thiserror="1"
+tabled = "0.15.0"
+rustyline = "14.0.0"
+serde={version = "1",features = ["derive"]}
+serde_json = {version = "1"}
+bigdecimal = "0.4"
+derive_more = { version = "0.99", features = ["from", "add", "display"] }
+#derive_more = "0.99"

@@ -5,3 +5,10 @@ members = [
     "crates/services/repl"]
 
 
+[workspace.dependencies]
+# 一个用于打印诊断信息的库
+miette = "7.2.0"
+serde = { version = "1.0.203", features = ["derive"] }
+thiserror = "1.0.61"
+bigdecimal = { version = "0.4.3", features = ["serde"] }
+derive_more = "0.99.17"

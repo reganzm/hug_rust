@@ -150,6 +150,15 @@
 
 ### 提升篇
 
+[震惊！对不起我要食言了~](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484648&idx=1&sn=7d3ccaaa486a3a9ceab9b7d426050261&chksm=cfe11adaf89693cc12fced13c0f96cc239b2fdd5078f24ba3b876b0160a0b1db12686b3f1910&token=1568572924&lang=zh_CN#rd)
+
+[手撸数据结构:手动实现线性数据结构链表、栈、队列、Vec，撸完Rust码字能力又上了一层楼！](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484668&idx=1&sn=effde917dbbf87a8f262601601ae2dd1&chksm=cfe11acef89693d83141b6a4eb05e4c8a4ecf6323a394f5a5eb39c89dc22d4d129093d9aff35&token=1568572924&lang=zh_CN#rd)
+
+[收藏！用rust手撸一致性hash算法~](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484689&idx=1&sn=03c20b8fa29d6c72edb745d7dc7f3099&chksm=cfe11b23f89692357ee4ffc6d63a70f3bc306a3f1a4991a4eb300a8d1f8e45d6c008c00396a5&token=1568572924&lang=zh_CN#rd)
+
+[反转！计算机也有囧的时候！rust实现后缀表达式计算，解决计算机面临的窘境](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484709&idx=1&sn=415829b4295b2af9ed86624910df2bbb&chksm=cfe11b17f8969201bb224815b0316530d06cc6697aef8715f8d20d93bc327a164ee01fc5207e&token=1568572924&lang=zh_CN#rd)
+
+
 ### 手撸系列
 [逼自己看完，你的Rust撸码水平就会变牛，手搓一个线程池](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484417&idx=1&sn=f743a6c0c1805def380dbb5f39f0a9d1&chksm=cfe11a33f8969325bc59f76480f23a88c66c080783bf0a6264c9315d10d053e011f4d9f9e4a6&token=2060893093&lang=zh_CN#rd)
 

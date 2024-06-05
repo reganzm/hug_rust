@@ -15,7 +15,7 @@ fn seed_hash(seed: &str) -> usize {
 }
 
 // 密码子,随机的一串字符串，用于生成密码时，从中挑选字符
-const CRYPTO:&str = "!@#$%^&*()POIUYTREWQSDAFSGJKZBXNCMVBL<:{}[]|abcedljloweiunbaljkfl1289829179438fsdljflfjasfdsbfJKFLSAFLSAJFELJ*(&(&(*&*^&^%$%$^&^*";
+const CRYPTO:&str = r#"!@#$%^&*()POIUYTREWQSDAFSGJKZBXNCMVBL<:{}[]|abcedljloweiunbaljkfl1289829179438fsdljflfjasfdsbfJKFLSAFLSAJFELJ*(&(&(*&*^&^%$%$^&^*"#;
 
 // 产生密码的方法
 

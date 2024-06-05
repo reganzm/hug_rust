@@ -1,7 +1,8 @@
 //!实现一个通用的密码生成器
 
-use anyhow::{bail, Error};
+use anyhow::{bail, Error, Ok};
 use base64::prelude::*;
+use clap::Parser;
 use rand::prelude::*;
 
 // 计算seed种子的hash值
@@ -57,11 +58,34 @@ fn generate_password(seed: &str, length: usize) -> Result<String, Error> {
     }
 }
 
-fn main() {
-    let result = generate_password("微信", 20);
+
+
+
+// 命令行解析
+#[derive(Debug,Parser)]
+#[clap(version,about)]
+struct Args{
+    //生成密码的种子
+    #[clap(short,long)]
+    seed:String,
+
+    // 密码长度
+    #[clap(short,long,default_value_t=15)]
+    length:usize
+
+}
+fn main()->Result<(),Error> {
+
+    let args = Args::parse();
+    // 种子长度必须大于等于4
+    if args.length < 4{
+        bail!("种子:{} 长度太短，请换一个",&args.seed);
+    }
+
+    let (seed,lenght) = (args.seed,args.length);
+
+
+    let result = generate_password(&seed, lenght);
     println!("{:?}", result);
-    let result = generate_password("qq", 10);
-    println!("{:?}", result);
-    let result = generate_password("支付宝", 12);
-    println!("{:?}", result);
+    Ok(())
 }

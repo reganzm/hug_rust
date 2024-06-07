@@ -249,4 +249,7 @@ fn main() {
     for i in iter {
         println!("score:{i}");
     }
+
+
+    println!("数据个数:{}",map.len());
 }

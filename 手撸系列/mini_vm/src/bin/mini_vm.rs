@@ -1,5 +1,4 @@
 //! mini virtual machine 迷你虚拟机
-//! 
 #[derive(Debug)]
 struct Instruct {
     // 指令
@@ -34,7 +33,7 @@ enum Condition {
 // 保存状态的结构体
 #[derive(Debug)]
 struct VMState<'a> {
-    ip: i32,                  // 指令指针
+    ip: i32,                  // 指令指针，指向具体的指令Instruct
     flag: Condition,          //判断标志
     code_ptr: &'a [Instruct], // 代码段地址
     data_ptr: &'a mut [i32],  //数据段地址

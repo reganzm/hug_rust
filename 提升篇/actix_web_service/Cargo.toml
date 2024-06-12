@@ -1,0 +1,20 @@
+[package]
+name = "actix_web_service"
+version = "0.1.0"
+edition = "2021"
+default-run = "teacher-service"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-rt="2"
+actix-web="4"
+chrono={version = "0.4.19",features = ["serde"]}
+dotenv="0.15.0"
+serde={version = "1",features = ["derive"]}
+sqlx = {version = "0.7",features = ["postgres","runtime-tokio-rustls","macros","chrono"]}
+
+
+
+[[bin]]
+name = "teacher-service"

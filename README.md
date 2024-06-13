@@ -158,6 +158,18 @@
 
 [反转！计算机也有囧的时候！rust实现后缀表达式计算，解决计算机面临的窘境](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484709&idx=1&sn=415829b4295b2af9ed86624910df2bbb&chksm=cfe11b17f8969201bb224815b0316530d06cc6697aef8715f8d20d93bc327a164ee01fc5207e&token=1568572924&lang=zh_CN#rd)
 
+[实战！通过项目学rust web微服务框架：actix-web](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484766&idx=1&sn=869990e2914618cf6cc60771fd5e99ae&chksm=cfe11b6cf896927a92ef9f44b8e396791fd2ce342e24e17e7e7b4143e728358b72a9b2447f0e&token=1256659165&lang=zh_CN#rd)
+
+[收藏！常见的搜索算法及rust实现](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484745&idx=1&sn=32616f462a23d0f3f9e8f49ca10afcd9&chksm=cfe11b7bf896926d2e7cc5d1a810f62daecdec3f2dfef4e91e42032db44bc351d8c52c5f8118&token=1256659165&lang=zh_CN#rd)
+
+[秒！CPU眼里的self参数(rust语言)](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484731&idx=1&sn=a8da6f44490ddc116f812e36de53fd65&chksm=cfe11b09f896921ff27f2c137009c1e0cdc7c6f84ec5aa4ec32fadee536148277c424840a60c&token=1256659165&lang=zh_CN#rd)
+
+[收藏！rust练手小项目，人人都能拥有一个密码生成器](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484724&idx=1&sn=7624820d4e469ad977bd4966297ee8f6&chksm=cfe11b06f8969210c0a0edc215a3670d2752c3520c61060ff86d6d92763d537845aa79f8d32e&token=1256659165&lang=zh_CN#rd)
+
+[白话区块链，用rust实现一个mini区块链！](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484718&idx=1&sn=1f567c176dd756a88385adf9610ee030&chksm=cfe11b1cf896920a46fe0960e0f09dc95d9b54a5bfbe2f08739912cc7bc079b053c1ab619351&token=1256659165&lang=zh_CN#rd)
+
+
+
 
 ### 手撸系列
 [逼自己看完，你的Rust撸码水平就会变牛，手搓一个线程池](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484417&idx=1&sn=f743a6c0c1805def380dbb5f39f0a9d1&chksm=cfe11a33f8969325bc59f76480f23a88c66c080783bf0a6264c9315d10d053e011f4d9f9e4a6&token=2060893093&lang=zh_CN#rd)
@@ -169,6 +181,10 @@
 [绝了，干货不重样！新手挑战一小时学一种Rust框架之解析框架nom——实现时序数据库协议解析（上）](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484615&idx=1&sn=5126cca16798c6601598b7d736b842c0&chksm=cfe11af5f89693e357450b03f0133ac807cf44e4160b04a68139e644bdc54553c668375115cb&token=2060893093&lang=zh_CN#rd)
 
 [性能炸裂！10万行数据耗时500毫秒，使用rust的nom框架实现时序数据库协议解析(下)](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484625&idx=1&sn=ad12d066f20307cdc16a965114eff66c&chksm=cfe11ae3f89693f59418e0706d59000da1fb4dfe401b4befab6908f05e0a3cdfe7ab6e32f8b3&token=2060893093&lang=zh_CN#rd)
+
+[收藏，用rust实现一个迷你虚拟机，模拟CPU执行指令](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484753&idx=1&sn=73568ffe2e2dcb905d52ffa307d2d3c2&chksm=cfe11b63f89692751283ddbbf451ae3ec057aa3b3976283762db7daa25555388ce6623fa00e6&token=1256659165&lang=zh_CN#rd)
+
+
 
 ##### 添加公众号
 ![微信公众号](./images/wechat_service.jpg)

@@ -21,38 +21,46 @@ fn heap_sort(nums: &mut [i32]) {
 
     let len = nums.len() - 1;
     let parent = parent(len);
-    for end in (1..=parent).rev() {
-        // 构建小顶堆，下标从1开始
-        move_down(nums, end);
+    // 非叶子节点：[0..len/2 -1] 
+    // 构建完成后，堆顶是最大元素
+    for p in (1..=parent).rev() {
+        // 构建大顶堆 (下标从1开始是为了方便孩子节点关系：左孩子left_c=2*p 右孩子right_c=2*p+1)
+        move_down(nums, p);
     }
 
     for end in (1..nums.len()).rev() {
         // 堆顶元素和最后一个元素交换
         nums.swap(1, end);
-        move_down(&mut nums[..end], 1); // 重建堆
+        // 重建堆
+        move_down(&mut nums[..end], 1); 
     }
 }
 
 fn move_down(nums: &mut [i32], mut parent: usize) {
+    // nums最后索引
     let last = nums.len() - 1;
     loop {
+        // 左孩子
         let left = left_child(parent);
+        // 右孩子
         let right = right_child(parent);
+        // 退出条件
         if left > last {
             break;
         }
+        // 找到大的孩子
         let child = if right <= last && nums[left] < nums[right] {
             right
         } else {
             left
         };
-        // 子节点大于父节点，交换数据
+        // 孩子子节点大于父节点，交换数据
         if nums[child] > nums[parent] {
             nums.swap(parent, child);
         }
+        // 一直下推，直到退出条件
         parent = child;
     }
-    println!("{:?}",nums);
 }
 
 fn main() {

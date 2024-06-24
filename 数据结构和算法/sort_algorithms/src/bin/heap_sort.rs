@@ -21,7 +21,7 @@ fn heap_sort(nums: &mut [i32]) {
 
     let len = nums.len() - 1;
     let parent = parent(len);
-    // 非叶子节点：[0..len/2 -1] 
+    // 非叶子节点：[0..len/2 -1]
     // 构建完成后，堆顶是最大元素
     for p in (1..=parent).rev() {
         // 构建大顶堆 (下标从1开始是为了方便孩子节点关系：左孩子left_c=2*p 右孩子right_c=2*p+1)
@@ -32,7 +32,7 @@ fn heap_sort(nums: &mut [i32]) {
         // 堆顶元素和最后一个元素交换
         nums.swap(1, end);
         // 重建堆
-        move_down(&mut nums[..end], 1); 
+        move_down(&mut nums[..end], 1);
     }
 }
 

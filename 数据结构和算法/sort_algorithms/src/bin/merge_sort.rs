@@ -1,10 +1,9 @@
 //! 归并排序 递归+合并
 //! 平均时间复杂度O(nlog(2n)) 空间复杂度O(n) 稳定
 
-fn merge_sort(nums: &mut [i32]) {
+pub fn merge_sort(nums: &mut [i32]) {
     if nums.len() > 1 {
         let mid = nums.len() >> 1;
-        println!("nums:{:?},mid:{mid}", nums);
         // 排序前半部分数据
         merge_sort(&mut nums[..mid]);
         // 排序后半部分数据

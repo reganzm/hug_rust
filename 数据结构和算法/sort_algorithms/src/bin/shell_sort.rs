@@ -1,7 +1,7 @@
 //! 希尔排序
 //！ 平均时间复杂度O(n^1.3) 空间复杂度O(1) 不稳定
 
-fn shell_sort(nums: &mut [i32]) {
+pub fn shell_sort(nums: &mut [i32]) {
     // 内部是插入排序
     fn insert_sort(nums: &mut [i32], start: usize, gap: usize) {
         let mut i = start + gap;

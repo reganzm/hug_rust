@@ -1,7 +1,7 @@
 //! 选择排序
 //! 平均时间复杂度O(n^2) 空间复杂度 O(1) 不稳定
 
-fn select_sort(nums: &mut [i32]) {
+pub fn select_sort(nums: &mut [i32]) {
     let mut left = nums.len() - 1;
     while left > 0 {
         let mut pos_max = 0;

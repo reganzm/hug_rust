@@ -33,18 +33,10 @@ fn partition(nums: &mut [i32], low: usize, high: usize) -> usize {
         } else {
             // 交换左右标记的值
             nums.swap(left, right);
-            println!(
-                "loop 交换 low:{low} high:{high} left:{left} right:{right} {:?}",
-                nums
-            );
         }
     }
     // 交换右标记和参考值
     nums.swap(low, right);
-    println!(
-        "--交换 low:{low} high:{high} left:{left} right:{right} {:?}",
-        nums
-    );
     right
 }
 fn main() {

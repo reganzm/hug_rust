@@ -17,7 +17,7 @@ impl<H, T> Bucket<H, T> {
     }
 }
 
-fn bucket_sort<H, T, F>(nums: &mut [T], hasher: F)
+pub fn bucket_sort<H, T, F>(nums: &mut [T], hasher: F)
 where
     H: Ord,
     T: Ord + Clone + Debug,

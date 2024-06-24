@@ -1,7 +1,7 @@
 //! 插入排序算法
 //! 平均时间复杂度O(n^2) 空间复杂度O(1) 稳定
 
-fn insert_sort(nums: &mut [i32]) {
+pub fn insert_sort(nums: &mut [i32]) {
     if nums.len() <= 1 {
         return;
     }

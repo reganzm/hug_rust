@@ -1,7 +1,7 @@
 //! 基数排序
 //! 平均时间复杂度O(O*K) 空间复杂度O(n+k) 稳定
 
-fn radix_sort(nums: &mut [usize]) {
+pub fn radix_sort(nums: &mut [usize]) {
     if nums.len() <= 1 {
         return;
     }

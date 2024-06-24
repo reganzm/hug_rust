@@ -14,7 +14,7 @@ fn right_child(parent_index: usize) -> usize {
     (parent_index << 1) + 1
 }
 
-fn heap_sort(nums: &mut [i32]) {
+pub fn heap_sort(nums: &mut [i32]) {
     if nums.len() < 2 {
         return;
     }

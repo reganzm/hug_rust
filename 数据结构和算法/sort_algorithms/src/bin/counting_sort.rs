@@ -1,7 +1,7 @@
 //! 计数排序
 //! 平均时间复杂度O(n+k) 空间复杂度O(n+k) 稳定 n为待排数组长度，k为待排数据个数
 
-fn counting_sort(nums: &mut [usize]) {
+pub fn counting_sort(nums: &mut [usize]) {
     if nums.len() <= 1 {
         return;
     }

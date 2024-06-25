@@ -169,6 +169,10 @@
 [白话区块链，用rust实现一个mini区块链！](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484718&idx=1&sn=1f567c176dd756a88385adf9610ee030&chksm=cfe11b1cf896920a46fe0960e0f09dc95d9b54a5bfbe2f08739912cc7bc079b053c1ab619351&token=1256659165&lang=zh_CN#rd)
 
 
+[收藏！rust实现通用LRU缓存淘汰算法~写数据库组件一定用得到](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484773&idx=1&sn=238fcce07d8176c0f275be0b64a7b23f&chksm=cfe11b57f89692418d12ba657e48c35271ddfdb1954ba560e370615b551563e895ff6e7956a6&token=1525017624&lang=zh_CN#rd)
+
+
+[我真的会排序！rust实现十大排序算法](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484786&idx=1&sn=9c7be895eacba424260072bde4b4d235&chksm=cfe11b40f89692566fb961203461db615cdf627e694d0f985a0c1011058a56b7d90409b6d24f&token=1525017624&lang=zh_CN#rd)
 
 
 ### 手撸系列

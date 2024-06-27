@@ -1,4 +1,8 @@
-use miette::{Context, IntoDiagnostic};
+use aparser::{
+    ast::{parse_sql_command, SqlCommand},
+    error::FormattedError,
+};
+use miette::{Context, GraphicalReportHandler, IntoDiagnostic};
 use rustyline::{
     completion::FilenameCompleter, error::ReadlineError, highlight::Highlighter, Completer,
     CompletionType, Config, Editor, Helper, Hinter, Validator,
@@ -27,7 +31,9 @@ fn main() -> miette::Result<()> {
             Ok(line) => {
                 rl.add_history_entry(line.as_str()).into_diagnostic()?;
                 // todo 增加输入行处理函数
-                //handle_line(line, &mut exec)
+                // 解析输入的命令
+                let result = parse_sql_command(&line);
+                display(result);
             }
             Err(ReadlineError::Interrupted) => {
                 // CTRL-C 跳过本次输入
@@ -47,4 +53,19 @@ fn main() -> miette::Result<()> {
         .wrap_err("Saving REPL history")?;
 
     Ok(())
+}
+
+fn display(res: Result<SqlCommand, FormattedError>) {
+    match res {
+        Ok(exec_res) => println!("{:#?}", exec_res),
+        Err(e) => {
+            let mut s = String::new();
+            GraphicalReportHandler::new()
+                .with_cause_chain()
+                .with_context_lines(10)
+                .render_report(&mut s, &e)
+                .unwrap();
+            println!("{s}");
+        }
+    }
 }

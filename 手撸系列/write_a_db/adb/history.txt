@@ -1,2 +1,6 @@
 #V2
-fjlfja
+create table student (name string , age int);
+insert into student '三角兽',18;
+insert into student values '三角兽',18;
+select * from student;
+select name,age from student;

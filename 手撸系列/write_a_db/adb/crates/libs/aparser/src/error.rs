@@ -1,12 +1,11 @@
 //! 统一错误错误
 //!
 use miette::Diagnostic;
-use nom_locate::LocatedSpan;
 use nom_supreme::error::{BaseErrorKind, ErrorTree, GenericErrorTree, StackContext};
 use thiserror::Error;
 
-// 定义类型，用于包装输入str
-pub type RawSpan<'a> = LocatedSpan<&'a str>;
+use crate::parse::RawSpan;
+
 // 定义错误类型
 pub type MyParseError<'a> = ErrorTree<RawSpan<'a>>;
 

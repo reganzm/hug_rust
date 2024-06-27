@@ -12,3 +12,6 @@ miette = { workspace = true, features = ["fancy"] }
 rustyline = { version = "11.0.0", features = ["derive"] }
 # 一个将struct和enum以表格形式打印出来的库
 tabled = "0.15.0"
+
+# 解析模块
+aparser = {path="../../libs/aparser"}

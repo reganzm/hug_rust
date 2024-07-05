@@ -175,6 +175,12 @@
 [我真的会排序！rust实现十大排序算法](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484786&idx=1&sn=9c7be895eacba424260072bde4b4d235&chksm=cfe11b40f89692566fb961203461db615cdf627e694d0f985a0c1011058a56b7d90409b6d24f&token=1525017624&lang=zh_CN#rd)
 
 
+[开窍了！CPU眼里的指针和引用、胖瘦指针](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484812&idx=1&sn=8aeab959d1e750897e70756c44eee6ab&chksm=cfe11bbef89692a8521b4922dad6c536ebbc4eb8866522ecea5723e331320c7473a8edb45514&token=1360593285&lang=zh_CN#rd)
+
+[扒一扒！CPU眼里的rust const常量和static静态变量~](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484819&idx=1&sn=a85a37ac0ca50cc1e78db60ae9099e45&chksm=cfe11ba1f89692b73c2d79f4fe9a1e207cfe7acd233a577f8416bf4f9a8e985874c2989e0ec3&token=1360593285&lang=zh_CN#rd)
+
+
+
 ### 手撸系列
 [逼自己看完，你的Rust撸码水平就会变牛，手搓一个线程池](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484417&idx=1&sn=f743a6c0c1805def380dbb5f39f0a9d1&chksm=cfe11a33f8969325bc59f76480f23a88c66c080783bf0a6264c9315d10d053e011f4d9f9e4a6&token=2060893093&lang=zh_CN#rd)
 
@@ -187,6 +193,8 @@
 [性能炸裂！10万行数据耗时500毫秒，使用rust的nom框架实现时序数据库协议解析(下)](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484625&idx=1&sn=ad12d066f20307cdc16a965114eff66c&chksm=cfe11ae3f89693f59418e0706d59000da1fb4dfe401b4befab6908f05e0a3cdfe7ab6e32f8b3&token=2060893093&lang=zh_CN#rd)
 
 [收藏，用rust实现一个迷你虚拟机，模拟CPU执行指令](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484753&idx=1&sn=73568ffe2e2dcb905d52ffa307d2d3c2&chksm=cfe11b63f89692751283ddbbf451ae3ec057aa3b3976283762db7daa25555388ce6623fa00e6&token=1256659165&lang=zh_CN#rd)
+
+[rust基于kvm实现虚拟机](https://mp.weixin.qq.com/s?__biz=Mzg5MDE5NDc4MQ==&mid=2247484831&idx=1&sn=7612a9f160fd8a518d55afa0bb611653&chksm=cfe11badf89692bbe1101c2a5883979d9bdcea76d8afc6d017b95f636cff2e043188eb3c243f&token=1360593285&lang=zh_CN#rd)
 
 
 

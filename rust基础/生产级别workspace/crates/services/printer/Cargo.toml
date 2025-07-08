@@ -1,0 +1,11 @@
+[package]
+name = "printer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# 在该包中使用其它的包，通过路径导入
+lib-core = {path = "../../libs/lib-core"}
+lib-utils = {path = "../../libs/lib-utils"}

@@ -1,0 +1,17 @@
+[package]
+name = "repl"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# 一个用于打印诊断信息的库
+miette = { workspace = true, features = ["fancy"] }
+# 命令行交互工具
+rustyline = { version = "11.0.0", features = ["derive"] }
+# 一个将struct和enum以表格形式打印出来的库
+tabled = "0.15.0"
+
+# 解析模块
+aparser = {path="../../libs/aparser"}

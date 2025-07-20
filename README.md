@@ -12,6 +12,10 @@
 
 **互动方式**：微信群和公众号(文末有加入方式)
 
+**官方网站**: https://itodoit.com
+
+**github地址**: https://github.com/reganzm/hug_rust
+
 ##### 整个系列布局：
 - 第一部分：Rust语法快速学习
 - 第二部分：Rust设计模式
